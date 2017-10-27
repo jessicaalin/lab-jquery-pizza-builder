@@ -23,11 +23,14 @@ $(document).ready(function() {
       roniButton.toggleClass('active');
       roniPrice.toggle();
       if (roniButton.hasClass('active')) {
-      totalPrice += roniCost;
+        totalPrice += roniCost;
+        priceNumber.empty();
     }
       else {
         totalPrice -= roniCost;
+        priceNumber.empty();
       }
+      priceNumber.append('$' + totalPrice);
       console.log(totalPrice);
     });
 
@@ -48,10 +51,13 @@ $(document).ready(function() {
       mushroomPrice.toggle();
       if (mushroomButton.hasClass('active')) {
       totalPrice += mushroomCost;
+      priceNumber.empty();
     }
       else {
         totalPrice -= mushroomCost;
+        priceNumber.empty();
       }
+      priceNumber.append('$' + totalPrice);
       console.log(totalPrice);
     });
 
@@ -70,11 +76,14 @@ $(document).ready(function() {
       greenButton.toggleClass('active');
       greenPrice.toggle();
       if (greenButton.hasClass('active')) {
-      totalPrice += greenCost;
+        totalPrice += greenCost;
+        priceNumber.empty();
     }
       else {
         totalPrice -= greenCost;
+        priceNumber.empty();
       }
+      priceNumber.append('$' + totalPrice);
       console.log(totalPrice);
     });
 
@@ -93,11 +102,14 @@ $(document).ready(function() {
       sauceButton.toggleClass('active');
       saucePrice.toggle();
       if (sauceButton.hasClass('active')) {
-      totalPrice += sauceCost;
+        totalPrice += sauceCost;
+        priceNumber.empty();
     }
       else {
         totalPrice -= sauceCost;
+        priceNumber.empty();
       }
+      priceNumber.append('$' + totalPrice);
       console.log(totalPrice);
     });
 
@@ -117,11 +129,14 @@ $(document).ready(function() {
       crustButton.toggleClass('active');
       crustPrice.toggle();
       if (crustButton.hasClass('active')) {
-      totalPrice += crustCost;
+        totalPrice += crustCost;
+        priceNumber.empty();
     }
       else {
         totalPrice -= crustCost;
+        priceNumber.empty();
       }
+      priceNumber.append('$' + totalPrice);
       console.log(totalPrice);
     });
 
